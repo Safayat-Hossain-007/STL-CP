@@ -23,7 +23,7 @@ int main(){
     //     q.pop();
     // }
     //priority queue is simillar to multiset
-    //multiset sort kae chotu theke boro
+    //multiset sort kore chotu theke boro
     //priority queue boro theke chotu sort kore
     //dijaskstra tae we use priority queue
  
