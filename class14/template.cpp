@@ -114,10 +114,13 @@ void faltu( T arg, const hello &... rest) {
                 faltu(rest...);
 }
  
- 
+ int a[123];
 int main()
 {
     optimize();
+    //dbg submit korar age debug korte hobe because eta majhe majhe tl dey
+    mem( a, 1);
+    dbg( a, 10);
  
     return 0;
 }
