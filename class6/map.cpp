@@ -40,7 +40,7 @@ int cnt[100123];
     // id["dima"] = 3;
     // id["sharif"] = 5;
     // id["prety"] = 6;
-    // id["antora"] = 9;
+    // id["lokely"] = 9;
     // for(auto u : id){
     //     cout<<u.first<<" "<<u.second<<endl;
     // }

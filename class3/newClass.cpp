@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    //findinf out the unique element from the string
+    //finding out the unique element from the string
     // vector<string> v;
     // v.push_back("safayat");
     // v.push_back("safayat");
