@@ -115,7 +115,8 @@ void faltu( T arg, const hello &... rest) {
 }
 
 const int mx = 1e7+123;
-bool isPrime[mx];
+// bool isPrime[mx];
+bitset<mx> isPrime; // bitset use korle value => n/32 dara vag hoye zay
 vector<int> primes;
 void primeGen( int n ){
     for(int i = 2; i <= n; i++){
@@ -133,12 +134,12 @@ void primeGen( int n ){
         }
     }
 }
-int main()
+int main() 
 {
     optimize();
     //sieve means => oprojoniyo ongsho chete fela
     //ze number gula prime na => those are composite number
-    int lim = 1e7;
+    int lim = 1e6;
     primeGen(lim);
     for(int i = 0;i<primes.size();i++){
         cout<<primes[i]<<endl;
