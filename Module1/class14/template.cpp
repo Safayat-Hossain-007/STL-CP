@@ -119,6 +119,9 @@ int main()
 {
     optimize();
     //dbg submit korar age debug korte hobe because eta majhe majhe tl dey
+    //memset can only take  => 0,-1 as input
+    //mainly used in dynamic programming 
+    
     mem( a, 1);
     dbg( a, 10);
  
