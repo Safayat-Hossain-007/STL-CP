@@ -127,6 +127,7 @@ int main()
             cnt[j]++;
         }
     }
+    
 
     long long sum=0;
     int n;
