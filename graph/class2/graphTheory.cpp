@@ -129,7 +129,7 @@ int main()
     cout<<"output"<<endl;
     for(int i=1;i<=n;i++){
         for(int j=1;j<=n;j++){
-            cout<<adjMat[i][j];
+            cout<<adjMat[i][j];  
         }
         cout<<endl;
     }
