@@ -113,12 +113,27 @@ void faltu( T arg, const hello &... rest) {
             cerr << arg << ' ';
                 faltu(rest...);
 }
- 
- int a[123];
+const int mx = 112;
+char adjMat[mx][mx]; 
 int main()
 {
     optimize();
+    int n,m;
+    cin>>n>>m;
+    //taking inputs in the adjacency matrix
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=m;j++){
+            cin>>adjMat[i][j];
+        }
+    }
+    cout<<"output"<<endl;
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=n;j++){
+            cout<<adjMat[i][j];
+        }
+        cout<<endl;
+    }
     
- 
+  
     return 0;
 }
