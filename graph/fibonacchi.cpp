@@ -19,4 +19,4 @@ int main(){
     int x = fibo(n);
     cout<<x<<end;
 
-} 
+}     
