@@ -2,6 +2,7 @@
 using namespace std;
 int fact(int n){
     if(n== 0){ //base case
+    //compexity O(n)
         return 1;
     }
     else{
