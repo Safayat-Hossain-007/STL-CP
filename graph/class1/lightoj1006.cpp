@@ -135,12 +135,11 @@ int main()
 {
     optimize();
     memset(dp,-1,sizeof(dp));
-    int t;
-    cin>>t;
-    while(t--){
-        int n;
-        cin>>n;
-        cout<<fn(n);
+    int n, cases;
+    scanf("%d", &cases);
+    for (int caseno = 1; caseno <= cases; ++caseno) {
+        scanf("%d %d %d %d %d %d %d", &a, &b, &c, &d, &e, &f, &n);
+        printf("Case %d: %d\n", caseno, fn(n) % 10000007);
     }
  
     return 0;
