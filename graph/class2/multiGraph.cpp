@@ -126,7 +126,7 @@ int main()
         //taking inputs for undirected graph
         adj[u].push_back(v);
         adj[v].push_back(u);
-    } 
+    }  
     //printing the outputs
     for(int i =1;i<=n;i++){
         cout<<"Adjacent list of "<<i<<" : "; //i tomo node er zotu gula adjaceny list ache print korlam
