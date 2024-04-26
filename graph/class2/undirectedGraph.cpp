@@ -113,37 +113,29 @@ void faltu( T arg, const hello &... rest) {
             cerr << arg << ' ';
                 faltu(rest...);
 }
-const int mx = 112;
-// char adjMat[mx][mx]; 
+const int mx = 1e5+123; //size of the node
 vector<int> adj[mx];
 int main()
 {
     optimize();
-    int n,m;
-    cin>>n>>m;
-    // //taking inputs in the adjacency matrix
-    // for(int i=1;i<=n;i++){
-    //     for(int j=1;j<=m;j++){
-    //         cin>>adjMat[i][j];
-    //     }
-    // }
-    // cout<<"output"<<endl;
-    // for(int i=1;i<=n;i++){
-    //     for(int j=1;j<=n;j++){
-    //         cout<<adjMat[i][j];  
-    //     }
-    //     cout<<endl;
-    // }
-    //taking inputs in the adjacency list
-    for(int i =1;i<=m;i++){
+    int n,m; // n=>node m=>edge
+    cin>>n>>m; //adjaceny list
+    for(int i=1;i<=m;i++){//edge sonkha zotu toto gula edge input nibe
         int u,v;
         cin>>u>>v;
-        //taking inputs in undirected graph
-        adj[u].push_back(v); //1 : 2
-        adj[v].push_back(u); //2 : 1
-
+        //taking inputs for undirected graph
+        adj[u].push_back(v);
+        adj[v].push_back(u);
+    } 
+    //printing the outputs
+    for(int i =1;i<=n;i++){
+        cout<<"Adjacent list of "<<i<<" : "; //i tomo node er zotu gula adjaceny list ache print korlam
+        for(auto u: adj[i]){
+            cout<<u<<" ";
+        } 
+        cout<<endl;
     }
-    
+
   
     return 0;
 }
